@@ -23,7 +23,7 @@ public class login extends javax.swing.JFrame {
             Connection con;
             Statement st,st1,st5;
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
             st = con.createStatement();
             st1 = con.createStatement();
             st5 = con.createStatement();
@@ -628,7 +628,7 @@ public class login extends javax.swing.JFrame {
 
         txtGmail.setEditable(true);
         txtGmail.setFont(new java.awt.Font("Courier New", 0, 22)); // NOI18N
-        txtGmail.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "kfa1711998@gmail.com", "khalid.datamax@gmail.com", "kf1711998@gmail.com" }));
+        txtGmail.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ABC@gmail.com", "PQRT@gmail.com", "SVTW@gmail.com" }));
 
         jLabel18.setFont(new java.awt.Font("Arial Black", 3, 24)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 0, 0));
@@ -980,7 +980,7 @@ public class login extends javax.swing.JFrame {
         Connection con;
         Statement st;
         Class.forName("com.mysql.jdbc.Driver");
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","****");
         st = con.createStatement();
 
         ResultSet password_db=st.executeQuery("select new_password from password");
@@ -1027,7 +1027,7 @@ public class login extends javax.swing.JFrame {
                    // C:\\Users\\Khalid Ansari\\Documents\\NetBeansProjects\\Self\\camera.jpg
 
                 st.execute("insert into unauthorized values(curtime(),curdate(),LOAD_FILE('C:\\\\Users\\\\Khalid Ansari\\\\Documents\\\\NetBeansProjects\\\\Self\\\\dist\\\\capture.jpg'))");
-                JOptionPane.showMessageDialog(null,"YOU ARE NOT \'KHALID\' \n\tPLEASE LEAVE");
+                JOptionPane.showMessageDialog(null,"YOU ARE NOT \'XYZ\' \n\tPLEASE LEAVE");
                 System.exit(0);
             }
         }
@@ -1061,7 +1061,7 @@ public class login extends javax.swing.JFrame {
             Connection con;
             Statement st;
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
             st = con.createStatement();
             float amount;
             String g_name= given_list.getSelectedItem().toString();
@@ -1098,7 +1098,7 @@ public class login extends javax.swing.JFrame {
             Connection con;
             Statement st;
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
             st = con.createStatement();
             float amount;
             String tname= taken_list.getSelectedItem().toString();
@@ -1138,7 +1138,7 @@ public class login extends javax.swing.JFrame {
             Connection con;
             Statement st,st1;
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
             st = con.createStatement();
             st1 = con.createStatement();
             float amount,pm,total_amt=0;
@@ -1189,7 +1189,7 @@ public class login extends javax.swing.JFrame {
                 Connection con;
                 Statement st;
                 Class.forName("com.mysql.jdbc.Driver");
-                con = DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+                con = DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
                 st = con.createStatement();
                 ResultSet give1=st.executeQuery("select amt,des,date from given where name='"+given_list.getSelectedItem().toString()+"'");
                 while(give1.next())
@@ -1220,7 +1220,7 @@ public class login extends javax.swing.JFrame {
                     Connection con;
                     Statement st;
                     Class.forName("com.mysql.jdbc.Driver");
-                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
                     st = con.createStatement();
                     ResultSet danish= st.executeQuery("select amt,des,date from taken where name='"+taken_list.getSelectedItem().toString()+"'");
                     while(danish.next())
@@ -1274,7 +1274,7 @@ public class login extends javax.swing.JFrame {
                 Connection con ;
                 Statement st;
                 Class.forName("com.mysql.jdbc.Driver");
-                con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+                con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
                 st = con.createStatement();
                 ResultSet k = st.executeQuery("select sum(amt) from given where name='"+search.getSelectedItem().toString()+"'");
                 while(k.next())
@@ -1316,7 +1316,7 @@ public class login extends javax.swing.JFrame {
                     Connection con;
                     Statement st;
                     Class.forName("com.mysql.jdbc.Driver");
-                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","*******");
                     st = con.createStatement();
                     ResultSet danish= st.executeQuery("select * from unauthorized where time='"+unauth.getSelectedItem()+"'");
                     while(danish.next())
@@ -1397,7 +1397,7 @@ public class login extends javax.swing.JFrame {
                     Connection con;
                     Statement st,st1;
                     Class.forName("com.mysql.jdbc.Driver");
-                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
                     st = con.createStatement();
                     ResultSet danish= st.executeQuery("select sum(amt) from taken where name='"+msgname.getSelectedItem()+"'");
                     while(danish.next())
@@ -1433,7 +1433,7 @@ public class login extends javax.swing.JFrame {
                     Connection con;
                     Statement st;
                     Class.forName("com.mysql.jdbc.Driver");
-                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
                     st = con.createStatement();
                     String c = JOptionPane.showInputDialog("Enter Contact Number");
                     st.execute("insert into contact values('"+taken_list.getSelectedItem().toString()+"','"+c+"')");
@@ -1483,7 +1483,7 @@ public class login extends javax.swing.JFrame {
                     Class.forName("com.mysql.jdbc.Driver");
 
                     String get_db_pass = null;
-                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","khalid");
+                    con=DriverManager.getConnection("jdbc:mysql://localhost:3307/money","root","******");
                     st = con.createStatement();
                     String old = JOptionPane.showInputDialog("Old Password  ");
 
